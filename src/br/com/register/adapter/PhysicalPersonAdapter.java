@@ -13,8 +13,7 @@ public class PhysicalPersonAdapter implements IPersonAdapter {
 	@Override
 	public String getId(String payload) {
 		
-		int number = Integer.parseInt(payload);
-		return p.getIdByAddressNumber(number);
+		return p.getIdByAddressNumber(Integer.parseInt(payload));
 	}
 
 }
